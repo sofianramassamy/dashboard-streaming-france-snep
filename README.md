@@ -1,12 +1,12 @@
-# dashboard-streaming-france-snep
-# 🎵 Dashboard Power BI / Looker Studio Le marché français de la musique enregistrée (2019-2025) — Analyse des données SNEP
+# 🎵 Le marché français de la musique enregistrée (2019-2025) — Analyse des données SNEP
+
 > **En six ans, le streaming a fait basculer une industrie : porteur à lui seul de la croissance d'un marché qui franchit le milliard d'euros en 2024, il est passé de la moitié aux deux tiers des revenus de la musique enregistrée en France.**
 
 📊 Projet de data analyse réalisé avec **Google Sheets**, **Looker Studio** et **Power BI**, à partir des bilans annuels du SNEP.
 
 ---
 
-## 🎯 Objectif
+Objectif
 
 Répondre à une question simple en apparence : **qu'est-ce qui fait réellement croître le marché français de la musique enregistrée depuis 2019 ?**
 
@@ -14,7 +14,7 @@ Le dashboard décompose le chiffre d'affaires du marché en quatre segments (str
 
 ---
 
-## 📊 Résultats clés
+Résultats clés
 
 - **+38,7 %** de croissance du CA total du marché entre 2019 et 2025 (772 M€ → 1 071 M€), avec le **franchissement du milliard d'euros dès 2024**.
 - **+90,7 %** de croissance du CA streaming sur la même période (368,3 M€ → 702,2 M€) : le streaming porte à lui seul la quasi-totalité de la croissance du marché.
@@ -23,15 +23,15 @@ Le dashboard décompose le chiffre d'affaires du marché en quatre segments (str
 
 ---
 
-## 🔗 Dashboard interactif
+Dashboard interactif
 
-👉 **[Consulter le dashboard Looker Studio (lien public)](https://lookerstudio.google.com/VOTRE_LIEN_ICI)**
+👉 **[Consulter le dashboard Looker Studio (lien public)](https://datastudio.google.com/reporting/e2efb5c5-ab2b-4f2d-b28b-3ffade8b7911)**
 
 Le rapport Power BI (`.pbix`) est également disponible dans ce dépôt, avec des captures d'écran des deux versions dans le dossier du projet.
 
 ---
 
-## 🛠️ Démarche et outils
+Démarche et outils
 
 Pipeline en **5 étapes**, de la donnée brute au dashboard :
 
@@ -45,7 +45,7 @@ Pipeline en **5 étapes**, de la donnée brute au dashboard :
 
 ---
 
-## ⚠️ Défis rencontrés
+Défis rencontrés
 
 C'est souvent la partie la plus formatrice du projet :
 
@@ -56,7 +56,7 @@ C'est souvent la partie la plus formatrice du projet :
 
 ---
 
-## 🚀 Limites et pistes d'amélioration
+Limites et pistes d'amélioration
 
 - **Mesures DAX à dynamiser** — Les années de référence (2019, 2025) sont actuellement codées en dur dans certaines mesures. Piste : les rendre dynamiques avec `MAX()` / `MIN()` sur la colonne année, pour que les KPI se mettent à jour automatiquement à chaque nouvelle année de données.
 - **Mise à jour annuelle** — Intégration du bilan SNEP 2026 dès sa publication, sans modification de la structure du modèle.
